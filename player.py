@@ -1,5 +1,5 @@
 import pygame
-
+from helpers import *
 from bullet import Bullet
 
 
@@ -157,7 +157,8 @@ class Player:
             direction = self.direction
             new_bullet = Bullet(bullet_x, bullet_y, direction)
             self.bullets.append(new_bullet)
-            self.attack_cooldown = 40
+            play_gun_shoot_sound()
+            self.attack_cooldown = 45
 
     def update(self):
         animation_cooldown = 50

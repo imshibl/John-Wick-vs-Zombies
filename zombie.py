@@ -1,6 +1,8 @@
 import math
 import pygame
 
+from player import Player
+
 
 class Zombie:
     def __init__(self, x, y, name, max_hp, strength, direction):
@@ -206,7 +208,7 @@ class Zombie:
         if self.death_cooldown > 0:
             self.death_cooldown -= 1
 
-    def take_damage(self, damage, john_wick):
+    def take_damage(self, damage:int, player: Player):
         self.hp -= damage
         if self.direction == "right":
             self.action = 5
@@ -222,4 +224,4 @@ class Zombie:
                 self.action = 6
         
             self.alive = False
-            john_wick.kills += 1
+            player.kills += 1
