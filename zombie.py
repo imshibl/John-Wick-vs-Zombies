@@ -5,7 +5,7 @@ from player import Player
 
 
 class Zombie:
-    def __init__(self, x, y, name, max_hp, strength, direction):
+    def __init__(self, x, y, name, max_hp, strength, direction, speed):
         self.name = name
         self.max_hp = max_hp
         self.hp = max_hp
@@ -124,7 +124,7 @@ class Zombie:
         self.image = self.animation_list[self.action][self.frame_index]
         self.rect = self.image.get_rect()
         self.rect.center = (x, y)
-        self.speed = 1  # Speed of the zombie
+        self.speed = speed  # Speed of the zombie
         self.attack_cooldown = 0  # Cooldown timer for the attack
         self.got_hit_cooldown = 0
         self.death_cooldown = 0
@@ -215,6 +215,9 @@ class Zombie:
         else:
             self.action = 4
         self.got_hit_cooldown = 30
+        
+        if self.speed > 1:
+            self.speed -= 1
 
         if self.hp <= 0:
 
