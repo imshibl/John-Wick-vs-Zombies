@@ -166,7 +166,7 @@ class Zombie:
     def move_towards_player(self, player):
 
         if self.got_hit_cooldown == 0 and self.alive:
-
+                   
             if self.rect.centerx < player.rect.centerx - 50:
 
                 self.rect.x += self.speed

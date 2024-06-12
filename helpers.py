@@ -1,5 +1,4 @@
 
-# load images
 from pygame.font import Font
 from pygame.surface import Surface
 from settings import *

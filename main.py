@@ -25,21 +25,21 @@ def main_menu():
                     main_game()
                     print("game started")
 
-        # Draw background and button
         draw_bg(img=main_menu_bg_image)
-        
-        #Animate text
         text_y += direction * speed
+        #Animate text
         if text_y < text_top_limit or text_y > text_bottom_limit:
             direction *= -1  
+           
+      
     
-        # Draw text  
+     
         draw_text(text="Enter 'space' to start", font=font, text_col=white, x=80, y=text_y)
 
         # Update the display
         pygame.display.update()
         
         
-# Run the main menu
+
 main_menu()
         
