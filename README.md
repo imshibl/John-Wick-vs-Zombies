@@ -35,11 +35,7 @@ python main.py
 - Python
 - Pygame
 
-## Credits
 
-- Zombie sprites: [Zombie](https://free-game-assets.itch.io/free-2d-game-zombie-sprite)
-- Jhon Wick sprites: [Action Hero](https://www.gamedevmarket.net/asset/2d-action-hero-character)
-- Sound effects: [Sound Effects](https://pixabay.com/)
 
 ## Screenshots
 
@@ -52,6 +48,12 @@ Here are a few screenshots to give you a glimpse of the game:
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+## Credits
+
+- Zombie sprites: [free-game-assets.itch.io](https://free-game-assets.itch.io/free-2d-game-zombie-sprite)
+- Jhon Wick sprites: [https://www.gamedevmarket.net](https://www.gamedevmarket.net/asset/2d-action-hero-character)
+- Sound effects: [https://pixabay.com](https://pixabay.com/)
 
 ## Contributing
 
