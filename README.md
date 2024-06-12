@@ -45,9 +45,9 @@ python main.py
 
 Here are a few screenshots to give you a glimpse of the game:
 
-<img width="150" src="https://raw.githubusercontent.com/imshibl/John-Wick-vs-Zombies/main/screenshots/1.png"/> 
-<img width="150" src="https://raw.githubusercontent.com/imshibl/John-Wick-vs-Zombies/main/screenshots/1.png"/> 
-<img width="150" src="https://raw.githubusercontent.com/imshibl/John-Wick-vs-Zombies/main/screenshots/1.png"/> 
+<img width="400" src="https://raw.githubusercontent.com/imshibl/John-Wick-vs-Zombies/main/screenshots/1.png"/> 
+<img width="400" src="https://raw.githubusercontent.com/imshibl/John-Wick-vs-Zombies/main/screenshots/2.png"/> 
+<img width="400" src="https://raw.githubusercontent.com/imshibl/John-Wick-vs-Zombies/main/screenshots/3.png"/> 
 
 ## License
 
