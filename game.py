@@ -97,10 +97,15 @@ def main_game():
     
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
+                save_high_score(john_wick.kills)
                 run = False
               
     
             keys = pygame.key.get_pressed()
+            
+            if keys[pygame.K_ESCAPE]:
+                save_high_score(john_wick.kills)
+                run = False
     
             if keys[pygame.K_d]:
                 john_wick.action = 2

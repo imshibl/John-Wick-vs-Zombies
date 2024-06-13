@@ -16,7 +16,7 @@ fps = 60
 clock = pygame.time.Clock()
 
 #define fonts
-font = pygame.font.SysFont("Times New Roman", 24)
+font = pygame.font.SysFont("verdana", 24)
 
 
 #define colors

@@ -7,7 +7,7 @@ from game import *
 
 
 def main_menu():
-    print(get_high_score())
+    # print(pygame.font.get_fonts())
     text_y = 300
     text_x = 80
     text_top_limit = 290
@@ -36,7 +36,7 @@ def main_menu():
     
      
         draw_text(text="Enter 'space' to start", font=font, text_col=white, x=80, y=text_y)
-        draw_text(text="Top Kills: " + str(get_high_score()), font=font, text_col=red, x=110, y=350 )
+        draw_text(text="Top Kills: " + str(get_high_score()), font=font, text_col=red, x=130, y=350 )
 
         # Update the display
         pygame.display.update()

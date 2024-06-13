@@ -144,11 +144,11 @@ class Player:
         if self.direction == "left" and self.rect.left > 0:
 
             self.rect.x -= self.speed
-            print(self.rect.x)
+           
 
         elif self.direction == "right" and self.rect.right < SCREEN_WIDTH:
             self.rect.x += self.speed
-            print(self.rect.x)
+            
             
     def shoot(self):
          if self.attack_cooldown == 0:
