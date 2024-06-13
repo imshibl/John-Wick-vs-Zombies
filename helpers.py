@@ -31,6 +31,21 @@ def play_zombie_sound():
 
 def stop_zombie_sound():
     zombie_sound.stop()
+    
+    
+def save_high_score(new_score):
+    with open("highscore.txt", "r") as file:
+        high_score = int(file.read() or 0)
+    if new_score > high_score:
+        with open("highscore.txt", "w") as file:
+            file.write(str(new_score))
+            
+def get_high_score() -> int:
+    with open("highscore.txt", "r") as file:
+        high_score = int(file.read() or 0)
+    return high_score
+        
+        
    
    
    

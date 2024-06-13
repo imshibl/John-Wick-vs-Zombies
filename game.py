@@ -2,11 +2,11 @@ import random
 import sys
 import pygame
 from player import Player
-
 from zombie import Zombie
 from health import HealthBar
 from settings import *
 from helpers import *
+
 
 
 
@@ -19,7 +19,7 @@ from helpers import *
 
 def main_game():
     
-    john_wick = Player(400, 280, "jhon_wick", 100, 10, 3)
+    john_wick = Player(400, 280, "jhon_wick", 10, 10, 3)
     
     jhon_wick_health_bar = HealthBar(10, 50, john_wick.hp, john_wick.max_hp)
     
@@ -46,6 +46,10 @@ def main_game():
         # draw text(name and hp)
         draw_text(text=f"John Wick - HP:{john_wick.hp}",font= font, text_col= red,x= 10,y= 10)
         jhon_wick_health_bar.draw(screen, red, green, john_wick.hp)
+        
+        if jhon_wick_health_bar.hp <= 0:
+            save_high_score(john_wick.kills)
+            break
         
         draw_text(text=f"Kills:{john_wick.kills}",font=font, text_col=red,x= 700,y= 10)           
     
