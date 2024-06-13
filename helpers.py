@@ -1,4 +1,5 @@
 
+import os
 from pygame.font import Font
 from pygame.surface import Surface
 from settings import *
@@ -34,17 +35,21 @@ def stop_zombie_sound():
     
     
 def save_high_score(new_score):
+    
     with open("highscore.txt", "r") as file:
         high_score = int(file.read() or 0)
     if new_score > high_score:
         with open("highscore.txt", "w") as file:
             file.write(str(new_score))
             
+
 def get_high_score() -> int:
+    if not os.path.isfile("highscore.txt"):
+        with open("highscore.txt", "w") as file:
+            file.write("0")
     with open("highscore.txt", "r") as file:
         high_score = int(file.read() or 0)
     return high_score
-        
         
    
    
